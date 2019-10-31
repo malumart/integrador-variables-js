@@ -28,6 +28,8 @@ respuestaUsuario == "si" && (unidadesProd2 = prompt(`Cuantas unidades desea comp
 //5. Mostrar el detalle de la compra con:
      // - subtotales de cada producto (precio x cantidad) 
       //- total (suma de subtotales)
+
+//Muy buena esta solución, validando si existen unidades de cada producto para mostrar sólo el mensaje más relevante! 
 (unidadesProd1 && unidadesProd2) &&
     alert(`El detalle de su compra: ${unidadesProd1} unidades de ${prodPromo1} = $ ${unidadesProd1 * precioProd1}
     y ${unidadesProd2} unidades de ${prodPromo2} = $ ${unidadesProd2 * precioProd2}. Precio Total: $ ${unidadesProd1 * precioProd1 + unidadesProd2 * precioProd2}`);
@@ -47,6 +49,9 @@ let tarjetaCredito;
 tarjetaCredito == 'si' && (cuotas = prompt(`En cuantas cuotas desea abonar?`));
 
 let precioTotal = unidadesProd1 * precioProd1 + unidadesProd2 * precioProd2;
+
+//Recordá siempre dejar espacio entre los operadores
+// precioTotal / cuotas 
 let montoCuota = precioTotal/cuotas;
 // 7. Mostrar el detalle de la compra con:
 //- subtotales de cada producto (precio x cantidad) 
@@ -110,3 +115,5 @@ respuestaUsuario == "si" && (codigoIngresado = prompt("Ingrese el codigo de desc
 // 10. Mostrar un saludo de despedida  
 
 alert (`Muchas gracias por visitar ${nombreTienda}!`);
+
+// Excelente trabajo!
